@@ -12,7 +12,7 @@ class AddItemFavorites:
 
     def add(self):
         with allure.step('Добавление товара в избранное'):
-            browser.element('.catalog-page-bottom__btn').hover().click()
+            browser.element('.catalog-page-bottom__btn').click()
             browser.element(
                 '[data-product-id="127738"] .product-card__favorite').click()
 
