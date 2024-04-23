@@ -12,7 +12,7 @@ class AddItemFavorites:
 
     def add(self):
         with allure.step('Добавление товара в избранное'):
-            browser.element('.catalog-page-bottom__btn').click()
+            browser.element('.catalog-page-bottom__btn').hover().click()
             browser.element(
                 '[data-product-id="127738"] .product-card__favorite').click()
 
@@ -23,6 +23,14 @@ class AddItemFavorites:
                 '.personal-dropdown [href="/personal/wishlist/"]').click()
             browser.element(".product-item-wishlist-card").should(be.visible)
             browser.element('.wishlist_count').should(have.text("1"))
+
+    def clear_favorites(self):
+        with allure.step('Очистка избранного'):
+            browser.element('.personal-wishlist').click()
+            browser.element(
+                '.personal-dropdown [href="/personal/wishlist/"]').click()
+            browser.element(
+                '[data-product-id="127738"] .product-card__favorite').click()
 
 
 add_item_favorites = AddItemFavorites()
