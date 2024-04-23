@@ -1,7 +1,7 @@
-selene == "2.0.0rc9"
-pytest == "8.1.1"
-python-dotenv == "1.0.1"
+selene == 2.0.0rc9
+pytest == 8.1.1
+python-dotenv == 1.0.1
 allure-pytest
-pytest-repeat == "0.9.3"
-requests == "2.31.0"
-faker == "24.11.0"
+pytest-repeat == 0.9.3
+requests == 2.31.0
+faker == 24.11.0
