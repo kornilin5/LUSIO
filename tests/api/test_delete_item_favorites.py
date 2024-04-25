@@ -10,9 +10,9 @@ from lusio_tests.utils.api_helper import api_request
 @allure.feature('delete item favorites (api)')
 @allure.story('delete item from using api catalog to favorites')
 def test_delete_item_from_favorites(get_cookies):
-    item_favorites.add(get_cookies, 127762)
+    item_favorites.add(get_cookies, 128524)
 
-    item_favorites.delete(get_cookies, 127762)
+    item_favorites.delete(get_cookies, 128524)
 
     response = api_request('/personal/wishlist/', 'GET', cookies=get_cookies)
 

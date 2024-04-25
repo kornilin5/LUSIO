@@ -31,8 +31,8 @@ class ItemFavorites:
     def should_delete_item_from_favorites(self, response):
         with allure.step('проверка удаления из избранного'):
             assert response.status_code == 200
-            assert 'Трикотажный топ в полоску' not in response.text
-            assert '127762' not in response.text
+            assert 'Укороченный лонгслив' not in response.text
+            assert '128524' not in response.text
 
 
 item_favorites = ItemFavorites()
