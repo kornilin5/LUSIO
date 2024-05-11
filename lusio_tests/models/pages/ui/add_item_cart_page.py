@@ -1,4 +1,4 @@
-from selene import browser, have, be, command
+from selene import browser, have, be
 import allure
 
 
